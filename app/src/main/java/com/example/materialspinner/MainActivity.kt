@@ -15,7 +15,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         //setContentView(R.layout.activity_main)
 
-        binding= ActivityMainBinding.inflate(layoutInflater)
+      binding= ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
         val type = arrayOf("One","Two","Three","Four","Five")
@@ -27,7 +27,6 @@ class MainActivity : AppCompatActivity() {
         binding.filledExposed.setOnItemClickListener { adapterView, view, i, l ->
             Toast.makeText(applicationContext,binding.filledExposed.text.toString(),Toast.LENGTH_SHORT).show()
         }
-
 
     }
 }
